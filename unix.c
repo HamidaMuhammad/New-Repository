@@ -14,5 +14,5 @@ int main(int argc, char** argv) {
     }
            struct stat st;
             if (stat(argv[1], &st) == 0) {
-    system(cmd);
+    printf("Size of %s: %lld bytes\n", argv[1], (long long) st.st_size);
 }
