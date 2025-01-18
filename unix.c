@@ -13,6 +13,6 @@ int main(int argc, char** argv) {
         return -1;
     }
            struct stat st;
-        strncat(cmd, argv[1], BUFSIZE - strlen(cmd) - 1);
+            if (stat(argv[1], &st) == 0) {
     system(cmd);
 }
