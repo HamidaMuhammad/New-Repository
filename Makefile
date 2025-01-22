@@ -1,2 +1,2 @@
 all:
-	gcc -o main text.c
+	gcc -o main item.c
