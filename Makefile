@@ -1,2 +1,2 @@
 all:
-	gcc -o main item.c
+	gcc -o main simulationlab4-1.c
